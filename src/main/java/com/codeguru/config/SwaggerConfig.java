@@ -1,4 +1,4 @@
-package com.codeguru.config;
+package com.parika.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.info.BuildProperties;
@@ -36,8 +36,8 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title(buildProperties.getArtifact() + " API")
                 .description("API Documentation and a guid to getting started")
-                .termsOfServiceUrl("https://galaxygroup.biz/#about")
-                .contact(new Contact("Code GURU", "https://codeguru-pro.com/", "info@codeguru-pro.com"))
+                .termsOfServiceUrl("https://codeguru-pro.com/")
+                .contact(new Contact("CODE GURUS", "https://codeguru-pro.com", "info@codeguru-pro.com"))
                 .version(buildProperties.getVersion()).build();
     }
 }
